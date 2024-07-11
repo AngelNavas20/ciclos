@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
 
-    @GetMapping("/hola/{nombre}")
+    @GetMapping("/name/{nombre}")
     public String sayHello(@PathVariable String nombre) {
         return "Hola, " + nombre + "!!";
     }
